@@ -43,9 +43,9 @@ class SelectIcon extends Component
 
         $icons_array = [];
 
-        foreach (File::files($ICONS_PATH.$browse) as $k => $icon) {
+        foreach (File::files($this->ICONS_PATH.$browse) as $k => $icon) {
             if ($icon->getExtension() === 'svg') {
-                $icons_array[$icon->getFileName()] = $ICONS_PATH.$browse.$icon->getFileName();
+                $icons_array[$icon->getFileName()] = $this->ICONS_PATH.$browse.$icon->getFileName();
             }
         }
 
