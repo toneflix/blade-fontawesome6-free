@@ -30,17 +30,41 @@ $ composer require toneflix-code/blade-fontawesome6-free
 Icons can be used a self-closing Blade components which will be compiled to SVG icons:
 ```blade
 <x-fa6-circle-check-solid />
+<x-fa6s-circle-check />
 ```
 
 You can also pass classes to your icon components:
 ```blade
 <x-fa6-circle-check-regular class="w-6 h-6 text-gray-500 fill-current"/>
+<x-fa6r-circle-check class="w-6 h-6 text-gray-500 fill-current"/>
 ```
 
 And even use inline styles:
 ```blade
 <x-fa6-500px-brand style="fill: #F00" />
+<x-fa6b-500px style="fill: #F00" />
 ```
+
+## Available Set
+
+The library comes pre-bundled with all of Fontawesome 6 free icons, which you are free to extend with pro icons if you have a license
+
+Available set include:
+```
+all      []
+regular  [r]
+solid    [s]
+brands   [b]
+```
+If you chose to use the `all` set you would have to suffix your directive with the appropriate set you require:
+```
+<x-fa6-check-solid />
+``` 
+
+If you are not using a specific set the you would have to add the first letter of the set to the prefix:
+```
+<x-fa6r-bell />
+``` 
 
 ### Raw SVG Icons
  
@@ -55,6 +79,48 @@ Then use them in your views like:
 ```blade
 <img src="{{ asset('vendor/blade-fontawesome6/all/fa6-circle-check-regular.svg') }}" width="10" height="10"/>
 ```
+
+### HTML `<select></select>`
+You can also make a html `<select></select>` prefilled with your preferred icon set for convenience.
+```blade
+<x-fa6-select-icon />
+```
+The `fa6-select-icon` requires that you publish the raw SVG icons as assets.
+
+```bash
+php artisan vendor:publish --tag=blade-fontawesome6-free --force
+```
+
+The `fa6-select-icon` accepts all html select parameters and three optional parameters:
+```html
+    string "selected": <!-- A string value representing the name of the currently selected icon -->
+    string "set":` <!-- The name of the required icon set -->
+    string "path":` <!-- You are also allowed to load icons not presently part of the library, in this case use an absolute path to the required icons directory -->
+
+    <x-fa6-select-icon selected="circle-check" set="solid" />
+    <x-fa6-select-icon selected="circle-check" set="solid" :path="public_path('icons/remix')" />
+```
+
+
+### Helper
+The `loadSvg()` helper method has been provided for convenience to generate [an array of all icons available in your selected set | a raw icon like using the blade directives would do | a url to your icon incase you need to append it directly into a html tag].
+
+The `loadSvg()` helper requires that you publish the raw SVG icons as assets.
+
+```bash
+php artisan vendor:publish --tag=blade-fontawesome6-free --force
+```
+
+The loadSvg() helper accepts four optional parameters:
+```php
+print_r(loadSvg($icon_name = null, $ICONS_PATH = null, $link = false, $set = 'all'))
+
+string $icon_name  // The name of an icon that is currently available in the active set
+string $ICONS_PATH // You are also allowed to load icons not presently part of the library, in this case use an absolute path to the required icons directory
+boolean $link      // A boolen value indicating whether you want a the raw icon returned or an absolute link to the icon
+boolean $set      // The name of the required icon set
+```
+
 
 ### Blade Icons
 

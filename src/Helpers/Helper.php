@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\File;
 
 if (! function_exists('loadSvg')) {
-    function loadSvg($show = null, $ICONS_PATH, $link = false)
+    function loadSvg($icon_name = null, $ICONS_PATH = null, $link = false, $set = 'all')
     {
-        $show = ($show && stripos($show, '.svg') === false) ? "{$show}.svg" : $show;
+        $ICONS_PATH = realpath($ICONS_PATH ?: __DIR__.'/../../resources/svg/'.$set).'/';
+
+        $icon_name = ($icon_name && stripos($icon_name, '.svg') === false) ? "{$icon_name}.svg" : $icon_name;
 
         $icons_array = [];
 
@@ -15,13 +17,13 @@ if (! function_exists('loadSvg')) {
             }
         }
 
-        if ($show && file_exists($icons_array[$show] ?? '--;--') && ! is_dir($icons_array[$show] ?? '--;--')) {
+        if ($icon_name && file_exists($icons_array[$icon_name] ?? '--;--') && ! is_dir($icons_array[$icon_name] ?? '--;--')) {
             $icons_array = ($link === true)
-                ? asset('vendor/blade-fontawesome6-free/'.$show)
-                : file_get_contents($icons_array[$show]);
-        } elseif ($show) {
+                ? url('vendor/blade-fontawesome6-free/'.$set.'/'.$icon_name)
+                : file_get_contents($icons_array[$icon_name]);
+        } elseif ($icon_name) {
             $icons_array = ($link === true)
-                ? asset('vendor/blade-fontawesome6-free/'.collect($icons_array)->first())
+                ? url('vendor/blade-fontawesome6-free/'.$set.'/'.collect($icons_array)->first())
                 : file_get_contents(current($icons_array));
         }
 
