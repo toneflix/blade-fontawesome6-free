@@ -85,11 +85,7 @@ You can also make a html `<select></select>` prefilled with your preferred icon 
 ```blade
 <x-fa6-select-icon />
 ```
-The `fa6-select-icon` requires that you publish the raw SVG icons as assets.
-
-```bash
-php artisan vendor:publish --tag=blade-fontawesome6-free --force
-```
+The `fa6-select-icon` requires that you publish the raw SVG icons as assets, refer to the [**Raw SVG Icons**](#raw-svg-icons) section for details
 
 The `fa6-select-icon` accepts all HTML select parameters and three optional parameters:
 ```html
@@ -112,11 +108,7 @@ You would find the custom view file in: `views/vendor/blade-fontawesome6`
 ### Helper
 The `loadSvg()` helper method has been provided for convenience to generate [an array of all icons available in your selected set | a raw icon like using the blade directives would do | a url to your icon incase you need to append it directly into a html tag].
 
-The `loadSvg()` helper requires that you publish the raw SVG icons as assets.
-
-```bash
-php artisan vendor:publish --tag=blade-fontawesome6-free --force
-```
+The `loadSvg()` helper requires that you publish the raw SVG icons as assets, refer to the [**Raw SVG Icons**](#raw-svg-icons) section for details
 
 The `loadSvg()` helper accepts four optional parameters:
 ```php
