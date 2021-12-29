@@ -1,8 +1,8 @@
 <p align="center">
-    <img src="https://banners.beyondco.de/Blade%20Remix%20Icon.png?theme=light&packageManager=composer+require&packageName=andreiio%2Fblade-remix-icon&pattern=architect&style=style_1&description=A+package+to+easily+make+use+of+Remix+Icon+in+your+Laravel+Blade+views.&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" width="1280" title="Social Card Blade Remix Icon">
+    <img src="https://banners.beyondco.de/Blade%20Font%20Awesome%206%20Icon.png?theme=light&packageManager=composer+require&packageName=toneflix-code%2Fblade-fontawesome6-free&pattern=topography&style=style_2&description=A+package+to+easily+make+use+of+Font+Awesome+6+Icons+in+your+Laravel+Blade+views.&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" width="1280" title="Social Card Blade Font Awesome 6 Icon">
 </p>
 
-# Blade Font Awesome 6
+# Blade Font Awesome 6 Icon
 
 A package to easily make use of [Font Awesome 6](https://fontawesome.com/) in your Laravel Blade views.
 
@@ -68,24 +68,22 @@ $ composer test
 
 ## Credits
 
-- [Martin M.][link-author]
-- [Andrei Ioniță][link-maintainer]
+- [3m1n3nc3.][link-author] 
 - [All Contributors][link-contributors]
 
 ## License
 
 This project is licensed under the MIT License (MIT) – see the [LICENSE](LICENSE.md) file for details.
 
-[ico-version]: https://img.shields.io/packagist/v/andreiio/blade-remix-icon.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/toneflix/blade-fontawesome6-free.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-github-actions]: https://img.shields.io/github/workflow/status/andreiio/blade-remix-icon/Tests.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/365816298/shield
-[ico-downloads]: https://img.shields.io/packagist/dt/andreiio/blade-remix-icon.svg?style=flat-square
+[ico-github-actions]: https://img.shields.io/github/workflow/status/toneflix/blade-fontawesome6-free/Tests.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/442621603/shield
+[ico-downloads]: https://img.shields.io/packagist/dt/toneflix/blade-fontawesome6-free.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/andreiio/blade-remix-icon
-[link-github-actions]: https://github.com/andreiio/blade-remix-icon/actions
-[link-styleci]: https://styleci.io/repos/365816298
-[link-downloads]: https://packagist.org/packages/andreiio/blade-remix-icon
-[link-author]: https://github.com/skydiver
-[link-maintainer]: https://github.com/andreiio
+[link-packagist]: https://packagist.org/packages/toneflix/blade-fontawesome6-free
+[link-github-actions]: https://github.com/toneflix/blade-fontawesome6-free/actions
+[link-styleci]: https://styleci.io/repos/442621603
+[link-downloads]: https://packagist.org/packages/toneflix/blade-fontawesome6-free
+[link-author]: https://github.com/3m1n3nc3 
 [link-contributors]: ../../contributors
