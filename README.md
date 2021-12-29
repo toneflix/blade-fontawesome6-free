@@ -115,7 +115,7 @@ The `loadSvg()` helper accepts four optional parameters:
 loadSvg(
     string $icon_name = null  // The name of an icon that is currently available in the active set
     string $ICONS_PATH = null // You are also allowed to load icons not presently part of the library, in this case use an absolute path to the required icons directory
-    boolean $link = false      // A boolen value indicating whether you want a the raw icon returned or an absolute link to the icon
+    boolean $link = false     // A boolen value indicating whether you want a the raw icon returned or an absolute link to the icon
     boolean $set = 'all'      // The name of the required icon set
 }
 ```
