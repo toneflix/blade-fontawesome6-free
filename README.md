@@ -53,7 +53,7 @@ php artisan vendor:publish --tag=blade-fontawesome6-free --force
 Then use them in your views like:
 
 ```blade
-<img src="{{ asset('vendor/blade-fontawesome6-free/fa6-circle-check-regular.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/blade-fontawesome6/all/fa6-circle-check-regular.svg') }}" width="10" height="10"/>
 ```
 
 ### Blade Icons
