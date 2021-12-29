@@ -45,7 +45,7 @@ class SelectIcon extends Component
 
         foreach (File::files($this->ICONS_PATH . $this->set) as $k => $icon) {
             if ($icon->getExtension() === 'svg') {
-                $icons_array[$icon->getFileName()] = $this->ICONS_PATH . $this->set . $icon->getFileName();
+                $icons_array[$icon->getFileName()] = $this->ICONS_PATH.$this->set.$icon->getFileName();
             }
         }
 
