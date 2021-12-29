@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 use Illuminate\Support\Facades\File;
 
 if (! function_exists('loadSvg')) {
