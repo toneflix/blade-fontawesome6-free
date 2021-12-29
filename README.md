@@ -29,17 +29,17 @@ $ composer require toneflix-code/blade-fontawesome6-free
 
 Icons can be used a self-closing Blade components which will be compiled to SVG icons:
 ```blade
-<x-fa6-solid-check />
+<x-fa6solid-check />
 ```
 
 You can also pass classes to your icon components:
 ```blade
-<x-fa6-solid-check class="w-6 h-6 text-gray-500 fill-current"/>
+<x-fa6regular-check class="w-6 h-6 text-gray-500 fill-current"/>
 ```
 
 And even use inline styles:
 ```blade
-<x-fa6-solid-check style="fill: #F00" />
+<x-fa6brands-500px style="fill: #F00" />
 ```
 
 ### Raw SVG Icons
