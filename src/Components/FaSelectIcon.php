@@ -5,7 +5,7 @@ namespace ToneflixCode\FontAwesome6\Components;
 use Illuminate\Support\Facades\File;
 use Illuminate\View\Component;
 
-class Fa6SelectIcon extends Component
+class FaSelectIcon extends Component
 {
     public $selected;
     public $set;
