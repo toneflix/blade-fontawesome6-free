@@ -7,7 +7,7 @@
 A package to easily make use of [Font Awesome 6](https://fontawesome.com/) in your Laravel Blade views.
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
+[![Software License][ico-license]](LICENSE)
 [![Build Status][ico-github-actions]][link-github-actions]
 [![Style CI][ico-styleci]][link-styleci]
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -73,9 +73,9 @@ $ composer test
 
 ## License
 
-This project is licensed under the MIT License (MIT) – see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the MIT License (MIT) – see the [LICENSE](LICENSE) file for details.
 
-[ico-version]: https://img.shields.io/packagist/v/toneflix-code/blade-fontawesome6-free.svg?style=flat-square
+[ico-version]: https://img.shields.io/badge/packagist-v1.00-blue.svg?style=flat-square&logo=packagist
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-github-actions]: https://img.shields.io/github/workflow/status/toneflix/blade-fontawesome6-free/Tests.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/442621603/shield
