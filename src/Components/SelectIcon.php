@@ -43,22 +43,17 @@ class SelectIcon extends Component
 
         $icons_array = [];
 
-        foreach (File::files($this->ICONS_PATH . $this->set) as $k => $icon) 
-        {
-            if ($icon->getExtension() === 'svg') 
-            {
+        foreach (File::files($this->ICONS_PATH . $this->set) as $k => $icon) {
+            if ($icon->getExtension() === 'svg') {
                 $icons_array[$icon->getFileName()] = $this->ICONS_PATH . $this->set . $icon->getFileName();
             }
         }
 
-        if ($show && file_exists($icons_array[$show] ?? '--;--') && ! is_dir($icons_array[$show] ?? '--;--')) 
-        {
+        if ($show && file_exists($icons_array[$show] ?? '--;--') && ! is_dir($icons_array[$show] ?? '--;--')) {
             $icons_array = ($link === true)
                 ? asset('vendor/blade-fontawesome6-free/'.$show)
                 : file_get_contents($icons_array[$show]);
-        } 
-        elseif ($show) 
-        {
+        } elseif ($show) {
             $icons_array = ($link === true)
                 ? asset('vendor/blade-fontawesome6-free/'.collect($icons_array)->first())
                 : file_get_contents(current($icons_array));
