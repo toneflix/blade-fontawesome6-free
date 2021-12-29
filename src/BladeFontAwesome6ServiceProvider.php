@@ -6,7 +6,7 @@ namespace ToneflixCode\FontAwesome6;
 
 use BladeUI\Icons\Factory;
 use Illuminate\Support\ServiceProvider;
-use ToneflixCode\FontAwesome6\Components\FaSelectIcon;
+use ToneflixCode\FontAwesome6\Components\SelectIcon;
 
 class BladeFontAwesome6ServiceProvider extends ServiceProvider
 {
@@ -41,7 +41,7 @@ class BladeFontAwesome6ServiceProvider extends ServiceProvider
         }
 
         $this->loadViewComponentsAs('fa6', [
-            FaSelectIcon::class,
+            SelectIcon::class,
         ]);
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'fa6');
