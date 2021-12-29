@@ -19,10 +19,10 @@ class SelectIcon extends Component
      */
     public function __construct($selected = null, $set = 'all', $path = null)
     {
-        $this->ICONS_PATH = $path ? $path : $this->ICONS_PATH;
+        $this->set = in_array($set, ['all', 'solid', 'regular', 'brands']) ? trim($set, '/').'/' : 'all';
+        $this->ICONS_PATH = $path ? $path : $this->ICONS_PATH.$this->set;
         $this->selected = $selected;
-        $this->set = in_array($set, ['all', 'solid', 'regular', 'brands']) ? $set : 'all';
-        $this->icons = loadSvg(false, $this->ICONS_PATH, $set, false);
+        $this->icons = loadSvg(false, $this->ICONS_PATH, false);
     }
 
     /**
