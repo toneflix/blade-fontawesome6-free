@@ -5,12 +5,7 @@
     bootstrap="vendor/autoload.php"
     colors="true"
     testdox="true"
->
-    <coverage>
-        <include>
-            <directory suffix=".php">src/</directory>
-        </include>
-    </coverage>
+> 
     <testsuites>
         <testsuite name="Package Test Suite">
             <directory>tests</directory>
