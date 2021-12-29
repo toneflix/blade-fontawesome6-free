@@ -61,7 +61,7 @@ If you chose to use the `all` set you would have to suffix your directive with t
 <x-fa6-check-solid />
 ``` 
 
-If you are not using a specific set the you would have to add the first letter of the set to the prefix:
+If you are not using a specific set then you would have to add the first letter of the set to the prefix:
 ```
 <x-fa6r-bell />
 ``` 
@@ -91,16 +91,15 @@ The `fa6-select-icon` requires that you publish the raw SVG icons as assets.
 php artisan vendor:publish --tag=blade-fontawesome6-free --force
 ```
 
-The `fa6-select-icon` accepts all html select parameters and three optional parameters:
+The `fa6-select-icon` accepts all HTML select parameters and three optional parameters:
 ```html
     string "selected": <!-- A string value representing the name of the currently selected icon -->
-    string "set":` <!-- The name of the required icon set -->
-    string "path":` <!-- You are also allowed to load icons not presently part of the library, in this case use an absolute path to the required icons directory -->
+    string "set": <!-- The name of the required icon set -->
+    string "path": <!-- You are also allowed to load icons not presently part of the library, in this case use an absolute path to the required icons directory -->
 
     <x-fa6-select-icon selected="circle-check" set="solid" />
     <x-fa6-select-icon selected="circle-check" set="solid" :path="public_path('icons/remix')" />
 ```
-
 
 ### Helper
 The `loadSvg()` helper method has been provided for convenience to generate [an array of all icons available in your selected set | a raw icon like using the blade directives would do | a url to your icon incase you need to append it directly into a html tag].
@@ -111,20 +110,20 @@ The `loadSvg()` helper requires that you publish the raw SVG icons as assets.
 php artisan vendor:publish --tag=blade-fontawesome6-free --force
 ```
 
-The loadSvg() helper accepts four optional parameters:
+The `loadSvg()` helper accepts four optional parameters:
 ```php
-print_r(loadSvg($icon_name = null, $ICONS_PATH = null, $link = false, $set = 'all'))
-
-string $icon_name  // The name of an icon that is currently available in the active set
-string $ICONS_PATH // You are also allowed to load icons not presently part of the library, in this case use an absolute path to the required icons directory
-boolean $link      // A boolen value indicating whether you want a the raw icon returned or an absolute link to the icon
-boolean $set      // The name of the required icon set
+loadSvg(
+    string $icon_name = null  // The name of an icon that is currently available in the active set
+    string $ICONS_PATH = null // You are also allowed to load icons not presently part of the library, in this case use an absolute path to the required icons directory
+    boolean $link = false      // A boolen value indicating whether you want a the raw icon returned or an absolute link to the icon
+    boolean $set = 'all'      // The name of the required icon set
+}
 ```
-
 
 ### Blade Icons
 
 Blade Remix icon uses Blade Icons under the hood. Please refer to [the Blade Icons readme](https://github.com/blade-ui-kit/blade-icons) for additional functionality.
+
 
 ## Testing
 
