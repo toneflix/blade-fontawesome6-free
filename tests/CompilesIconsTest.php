@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace ToneflixCode\FontAwesome6\Tests;
 
-use ToneflixCode\FontAwesome6\Tests\TestCase;
-
 class CompilesIconsTest extends TestCase
 {
     /** @test */
