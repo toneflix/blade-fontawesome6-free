@@ -31,7 +31,6 @@ jobs:
       with:
         php-version: ${{ matrix.php }}
         extensions: fileinfo
-        coverage: pcov
         tools: composer:v2
 
     - name: Install PHP dependencies
