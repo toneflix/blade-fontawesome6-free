@@ -29,17 +29,17 @@ $ composer require toneflix-code/blade-fontawesome6-free
 
 Icons can be used a self-closing Blade components which will be compiled to SVG icons:
 ```blade
-<x-ri-bookmark-fill />
+<x-fa6-solid-check />
 ```
 
 You can also pass classes to your icon components:
 ```blade
-<x-ri-mail-line class="w-6 h-6 text-gray-500 fill-current"/>
+<x-fa6-solid-check class="w-6 h-6 text-gray-500 fill-current"/>
 ```
 
 And even use inline styles:
 ```blade
-<x-ri-stack-line style="fill: #F00" />
+<x-fa6-solid-check style="fill: #F00" />
 ```
 
 ### Raw SVG Icons
@@ -53,7 +53,7 @@ php artisan vendor:publish --tag=blade-fontawesome6-free --force
 Then use them in your views like:
 
 ```blade
-<img src="{{ asset('vendor/blade-fontawesome6-free/code-fill.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/blade-fontawesome6-free/fa6-solid-check.svg') }}" width="10" height="10"/>
 ```
 
 ### Blade Icons
