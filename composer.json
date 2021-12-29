@@ -23,15 +23,15 @@
     "autoload": {
         "psr-4": {
             "ToneflixCode\\FontAwesome6\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "ToneflixCode\\FontAwesome6\\Tests\\": "tests"
         },
         "files": [
             "src/Helpers/Helper.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ToneflixCode\\FontAwesome6\\Tests\\": "tests"
+        }
     },
     "scripts": {
         "test": "phpunit"
