@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\File;
 
 if ( ! function_exists('loadSvg') ) 
 {
-    public function loadSvg($show = null, $ICONS_PATH, $set = '', $link = false)
+    function loadSvg($show = null, $ICONS_PATH, $set = '', $link = false)
     {
         $set = $set ? trim($set, '/').'/' : 'all';
 
