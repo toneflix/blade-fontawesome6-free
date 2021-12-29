@@ -18,7 +18,7 @@ class SelectIcon extends Component
      *
      * @return void
      */
-    public function __construct($selected = null)
+    public function __construct($selected = null, $set = 'all')
     {
         $this->selected = $selected;
         $this->set = in_array($set, ['all', 'solid', 'regular', 'brands']) ? $set : 'all';
