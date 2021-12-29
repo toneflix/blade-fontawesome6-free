@@ -44,7 +44,7 @@ class Fa6SelectIcon extends Component
 
         $icons_array = [];
 
-        foreach (File::files($ICONS_PATH . $browse)) as $k => $icon) 
+        foreach (File::files($ICONS_PATH . $browse) as $k => $icon) 
         { 
             if ($icon->getExtension() === 'svg') 
             { 
