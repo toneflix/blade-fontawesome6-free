@@ -43,12 +43,8 @@ And even use inline styles:
 ```
 
 ### Raw SVG Icons
-
-<<<<<<< HEAD
-If you want to use the raw SVG icons as assets, you can publish them using:
-=======
-If you want to use the raw SVG icons as assets, you may publish them using:
->>>>>>> 4d9fad2 (Run tests)
+ 
+If you want to use the raw SVG icons as assets, you can publish them using: 
 
 ```bash
 php artisan vendor:publish --tag=blade-fontawesome6-free --force
