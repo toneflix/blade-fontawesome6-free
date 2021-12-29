@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\File;
 
 class Fa6SelectIcon extends Component
 {
-    public $slected;
+    public $selected;
+    public $set;
     public $icons;
 
     protected $ICONS_PATH =     __DIR__.'/../resources/svg/';
@@ -17,10 +18,11 @@ class Fa6SelectIcon extends Component
      *
      * @return void
      */
-    public function __construct($slected = null)
+    public function __construct($selected = null, $set = 'all')
     {
-        $this->slected = $slected; 
-        $this->icons = $this->loadSvg(false, false, 'all', $params = ''); 
+        $this->selected = $selected; 
+        $this->set = in_array($set, ['all', 'solid', 'regular', 'brands']) ? $set : 'all'; 
+        $this->icons = $this->loadSvg(false, false, $set, $params = ''); 
     }
 
     /**
