@@ -20,7 +20,7 @@ class CompilesIconsTest extends TestCase
 
     /** @test */
     public function it_can_add_classes_to_icons()
-    {2012-12-22T10:58:56-12:00
+    {
         $result = svg('fa6-check-solid', 'w-6 h-6 text-gray-500')->toHtml();
 
         $expected = <<<'SVG'
