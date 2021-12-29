@@ -14,8 +14,20 @@ class BladeFontAwesome6ServiceProvider extends ServiceProvider
     {
         $this->callAfterResolving(Factory::class, function (Factory $factory) {
             $factory->add('awesome6ix', [
-                'path'   => __DIR__.'/../resources/svg',
+                'path'   => __DIR__.'/../resources/svg/all',
                 'prefix' => 'fa6',
+            ]);
+            $factory->add('awesome6ix-solid', [
+                'path'   => __DIR__.'/../resources/svg/solid',
+                'prefix' => 'fa6s',
+            ]);
+            $factory->add('awesome6ix-regular', [
+                'path'   => __DIR__.'/../resources/svg/regular',
+                'prefix' => 'fa6r',
+            ]);
+            $factory->add('awesome6ix-brands', [
+                'path'   => __DIR__.'/../resources/svg/brands',
+                'prefix' => 'fa6b',
             ]);
         });
     }
