@@ -2,8 +2,7 @@
 
 use Illuminate\Support\Facades\File;
 
-if ( ! function_exists('loadSvg') ) 
-{
+if (! function_exists('loadSvg')) {
     function loadSvg($show = null, $ICONS_PATH, $set = '', $link = false)
     {
         $set = $set ? trim($set, '/').'/' : 'all';
