@@ -101,6 +101,13 @@ The `fa6-select-icon` accepts all HTML select parameters and three optional para
     <x-fa6-select-icon selected="circle-check" set="solid" />
     <x-fa6-select-icon selected="circle-check" set="solid" :path="public_path('icons/remix')" />
 ```
+If you would like to customize how the select field is rendered, you can publish the view:
+
+```bash
+php artisan vendor:publish --tag=blade-fontawesome6-views --force
+```
+You would find the custom view file in: `views/vendor/blade-fontawesome6`
+
 
 ### Helper
 The `loadSvg()` helper method has been provided for convenience to generate [an array of all icons available in your selected set | a raw icon like using the blade directives would do | a url to your icon incase you need to append it directly into a html tag].
