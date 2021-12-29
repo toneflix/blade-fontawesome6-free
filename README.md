@@ -75,15 +75,15 @@ $ composer test
 
 This project is licensed under the MIT License (MIT) – see the [LICENSE](LICENSE.md) file for details.
 
-[ico-version]: https://img.shields.io/packagist/v/toneflix/blade-fontawesome6-free.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/toneflix-code/blade-fontawesome6-free.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-github-actions]: https://img.shields.io/github/workflow/status/toneflix/blade-fontawesome6-free/Tests.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/442621603/shield
-[ico-downloads]: https://img.shields.io/packagist/dt/toneflix/blade-fontawesome6-free.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/toneflix-code/blade-fontawesome6-free.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/toneflix/blade-fontawesome6-free
+[link-packagist]: https://packagist.org/packages/toneflix-code/blade-fontawesome6-free
 [link-github-actions]: https://github.com/toneflix/blade-fontawesome6-free/actions
 [link-styleci]: https://styleci.io/repos/442621603
-[link-downloads]: https://packagist.org/packages/toneflix/blade-fontawesome6-free
+[link-downloads]: https://packagist.org/packages/toneflix-code/blade-fontawesome6-free
 [link-author]: https://github.com/3m1n3nc3 
 [link-contributors]: ../../contributors
