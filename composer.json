@@ -28,7 +28,10 @@
     "autoload-dev": {
         "psr-4": {
             "ToneflixCode\\FontAwesome6\\Tests\\": "tests"
-        }
+        },
+        "files": [
+            "src/Helpers/Helper.php"
+        ]
     },
     "scripts": {
         "test": "phpunit"
