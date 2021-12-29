@@ -2,9 +2,9 @@
 
 namespace ToneflixCode\FontAwesome6\Tests;
 
-use ToneflixCode\FontAwesome6\BladeFontAwesome6ServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
+use ToneflixCode\FontAwesome6\BladeFontAwesome6ServiceProvider;
 
 class TestCase extends BaseTestCase
 {
