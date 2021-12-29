@@ -97,6 +97,7 @@ The `fa6-select-icon` accepts all HTML select parameters and three optional para
     string "set": <!-- The name of the required icon set -->
     string "path": <!-- You are also allowed to load icons not presently part of the library, in this case use an absolute path to the required icons directory -->
 
+    <x-fa6-select-icon name="choose_icon" class="form-control" />
     <x-fa6-select-icon selected="circle-check" set="solid" />
     <x-fa6-select-icon selected="circle-check" set="solid" :path="public_path('icons/remix')" />
 ```
